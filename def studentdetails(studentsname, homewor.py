@@ -1,4 +1,4 @@
-def studentdetails(studentsname, homeworkscore, assessmentscore, finalexamscore):
+def studentdetails(homework, assessment, exam):
     total = homework + assessment + exam
     percentage = (total/175) * 100
     return percentage
@@ -18,6 +18,6 @@ if exam > 100:
     print("Invalid input")
     exit()
 
-percentresult = studentdetails(name, homework, assessment, exam)
+percentresult = studentdetails(homework, assessment, exam)
 
 print(name + " achieved a total percentage of: " + str(percentresult) + "%")
